@@ -130,12 +130,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xaga/proprietary/vendor/etc/cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color.xml \
     vendor/xiaomi/xaga/proprietary/vendor/etc/cust_color_36.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_36.xml \
     vendor/xiaomi/xaga/proprietary/vendor/etc/cust_color_42.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_42.xml \
+    vendor/xiaomi/xaga/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/xaga/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/xiaomi/xaga/proprietary/vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.beanpod.rc \
     vendor/xiaomi/xaga/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/xaga/proprietary/vendor/etc/init/hw/init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.project.rc \
     vendor/xiaomi/xaga/proprietary/vendor/etc/init/init.fmradio_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fmradio_drv.rc \
     vendor/xiaomi/xaga/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
+    vendor/xiaomi/xaga/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/xaga/proprietary/vendor/etc/init/vendor.microtrust.hardware.se@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.se@1.0-service.rc \
     vendor/xiaomi/xaga/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
     vendor/xiaomi/xaga/proprietary/vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc \
@@ -373,6 +375,9 @@ PRODUCT_PACKAGES += \
     libcamerasensorinfoxiaomi \
     libcom.xiaomi.metadatautils \
     libcom.xiaomi.pluginutils \
+    libdapparamstorage \
+    libdeccfg \
+    libdlbdsservice \
     libfeature.hdr10 \
     libfeaturepolicy \
     libfeaturepolicy_dbhandler \
@@ -414,6 +419,8 @@ PRODUCT_PACKAGES += \
     libremosaiclib \
     librgbwlightsensor \
     libsdk_sr \
+    libstagefright_soft_ddpdec \
+    libstagefrightdolby \
     libteeclientjni_isee \
     libteeclientjni_isee@1.1 \
     libteei_daemon_vfs \
@@ -741,6 +748,12 @@ PRODUCT_PACKAGES += \
     xagas5khm2_mipi_raw_tuning \
     se_nq_extn_client-v1 \
     secure_element-impl \
+    libmisoundfx \
+    libswdap \
+    libswgamedap \
+    libswvqe \
+    vendor.dolby.hardware.dms@2.0-impl \
+    vendor.dolby.hardware.dms@2.0 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
@@ -759,11 +772,13 @@ PRODUCT_PACKAGES += \
     android.hardware.security.secureclock-service.beanpod.xml \
     android.hardware.security.sharedsecret-service.beanpod.xml \
     manifest.microtrust.xml \
+    manifest_vendor.dolby.hardware.dms.xml \
     manifest_wechat.xml \
     batterysecret \
     fidoca_isee \
     android.hardware.security.keymint@1.0-service.beanpod \
     camerahalserver \
+    vendor.dolby.hardware.dms@2.0-service \
     vendor.microtrust.hardware.se@1.0-service \
     vendor.microtrust.hardware.soter@1.0-service \
     vendor.microtrust.hardware.thh@2.0-service \
